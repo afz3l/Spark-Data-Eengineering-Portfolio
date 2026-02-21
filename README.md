@@ -1,6 +1,5 @@
-# Practical Data Engineering with PySpark
-I created this repo to showcase my practical PySpark skills to show how I approach common data engineering problems using PySpark. The modules follow a logical flow — starting from reading raw data all the way to writing it back out in production-ready formats. The data files included are intentionally messy (corrupted records, missing headers, mixed delimiters) to reflect what I actually deal with on the job.
-
+# Applied Data Engineering with PySpark
+I created this repository to showcase how I approach common data engineering problems using PySpark, covering data ingestion, transformation, and writing production-ready outputs. The data files included are intentionally messy (corrupted records, missing headers, mixed delimiters) to reflect what I actually deal with on the job.
 ## Repository Structure
 ```
 Spark-Data-Engineering-Portfolio/
@@ -46,7 +45,6 @@ Spark-Data-Engineering-Portfolio/
 ## Module Breakdown
 ### 01 · Reading Sources
 This section covers ingesting data from different formats and handling edge cases that come up in real projects:
-
 | Script | Description |
 |---|---|
 | `Spark_Read_CSV.py` | Reading CSVs with various delimiters, quote characters, escape characters, multi-line records, and missing headers |
@@ -55,34 +53,25 @@ This section covers ingesting data from different formats and handling edge case
 | `Spark_Read_Write_Parquet.py` | Reading and writing Parquet files with schema evolution |
 | `JDBC.py` | Connecting to relational databases via JDBC |
 | `Text_Files.py` | Processing raw log files and unstructured text |
-
 ### 02 · Transformations
-
 The core Spark transformations I use day-to-day:
-
 | Script | Description |
 |---|---|
 | `1_Basic.py` | `select`, `filter`, `withColumn`, `drop`, `alias`, `cast` |
 | `2_Types_of_Data.py` | Working with StringType, DateType, TimestampType, ArrayType, MapType, StructType |
 | `3_Aggregations.py` | `groupBy`, `agg`, `pivot`, window functions |
 | `4_Complex_Types.py` | Explode, flatten, `array_contains`, `map_keys`, struct operations |
-
 ### 03 · Joins
-
 | Script | Description |
 |---|---|
 | `Join_Types.py` | Inner, Left, Right, Full Outer, Semi, Anti, Cross joins |
 | `Join_Strategies.py` | Broadcast joins, Sort-Merge joins, shuffle optimization, skew handling |
-
 ### 04 · Writing Data
-
 | Script | Description |
 |---|---|
 | `Write_Options.py` | Save modes (`overwrite`, `append`, `ignore`, `error`), partitioning, bucketing |
 | `Merge_Into.py` | Upsert patterns using Delta Lake `MERGE INTO` |
-
 ## Tech Stack
-
 | Tool | Version |
 |---|---|
 | Apache Spark | 3.4+ |
