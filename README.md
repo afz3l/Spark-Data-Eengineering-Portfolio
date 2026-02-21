@@ -1,4 +1,3 @@
-# Data Handling with PySpark
 I created this repository to showcase how I approach common data engineering problems using PySpark, covering reading from various file formats and handling data quality issues such as corrupted records, missing headers, and mixed delimiters. The data files included are intentionally messy (corrupted records, missing headers, mixed delimiters) to reflect what I actually deal with on the job.
 ## Repository Structure
 ```
