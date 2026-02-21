@@ -1,4 +1,4 @@
-# Spark Data Engineering Portfolio
+# Practical Data Engineering with PySpark
 I created this repo to showcase my practical PySpark skills to show how I approach common data engineering problems using PySpark. The modules follow a logical flow — starting from reading raw data all the way to writing it back out in production-ready formats. The data files included are intentionally messy (corrupted records, missing headers, mixed delimiters) to reflect what I actually deal with on the job.
 
 ## Repository Structure
